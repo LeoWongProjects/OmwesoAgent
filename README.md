@@ -6,10 +6,23 @@ Omweso is a board game part of a family of other variants in the Mancala family,
 
 ## Code Example
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+```python
+Minimax(boardstate, depth, turnPlayer)
+    if(depth is 0 || moveList is empty)
+        return difference in number of seeds
+    if(turnPlayer true)
+        get list of legalMoves
+        for move M in legalMoves:
+            bs = simulate move M
+            score = Minimax(bs, depth-1, false)
+        return bestMove
+    if(turnPlayer false)
+        get list of legalMoves
+        for move M in legalMoves:
+            bs = simulate move M
+            score = Minimax(bs, depth-1, true)
+        return bestMove
+        
 ```
 ## Motivation
 
