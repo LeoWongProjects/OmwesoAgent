@@ -58,7 +58,7 @@ AB(boardstate, depth, a, b, turnPlayer)
 
 Several approaches have been considered and combined together in the process of creating the AI agent. After each implementation of a new algorithm or concept, tests have been run in order to obtain data for efficiency assessment. Depending on the results, the method tends to change accordingly. Hence, there is a motivation behind every step throughout the conception of the agent. Overall, the approach can be defined as a deep-searching engine which implements touches of randomness.
 
-### Greedy, Greedier, Greediest
+#### Greedy, Greedier, Greediest
 The first attempt of creating an Omweso agent is to implement the logic based on greedy heuristics. Given that the agent plays a particular move, the algorithm returns the best decision according to greedy evaluation functions. The initial motivation behind this choice of method is because of speed and complexity. Supposing that the greedy algorithm does indeed return an optimal solution, it would be much faster and computationally more efficient than other extensive \textit{heavy-weight} algorithms. 
 
 ## Installation
