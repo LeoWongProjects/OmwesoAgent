@@ -6,7 +6,9 @@ Omweso is a board game part of a family of other variants in the Mancala family,
 
 ## Code Example
 
-```python
+Snippet of Pseudocode:
+
+```java
 Minimax(boardstate, depth, turnPlayer)
     if(depth is 0 || moveList is empty)
         return difference in number of seeds
