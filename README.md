@@ -6,7 +6,7 @@ Omweso is a board game part of a family of other variants in the Mancala family,
 
 ## Code Example
 
-Snippet of Pseudocode:
+Pseudocode for Minimax algorithm:
 
 ```java
 Minimax(boardstate, depth, turnPlayer)
@@ -26,9 +26,40 @@ Minimax(boardstate, depth, turnPlayer)
         return bestMove
         
 ```
+
+Pseudocode for Alpha-Beta Pruning Algorithm:
+
+```java
+AB(boardstate, depth, a, b, turnPlayer)
+    if(depth is 0 || moveList is empty)
+        return difference in number of seeds
+    if(turnPlayer true)
+        get list of legalMoves
+        for move M in legalMoves:
+            bs = simulate move M
+            score = AB(bs, depth-1, a, b, false)
+            a = Max(a, score)
+            if(b <= a)
+                break
+        return bestMove
+    if(turnPlayer false)
+        get list of legalMoves
+        for move M in legalMoves:
+            bs = simulate move M
+            score = AB(bs, depth-1, a, b, true)
+            b = Max(b, score)
+            if(b <= a)
+                break
+        return bestMove
+        
+```
+
 ## Motivation
 
 Several approaches have been considered and combined together in the process of creating the AI agent. After each implementation of a new algorithm or concept, tests have been run in order to obtain data for efficiency assessment. Depending on the results, the method tends to change accordingly. Hence, there is a motivation behind every step throughout the conception of the agent. Overall, the approach can be defined as a deep-searching engine which implements touches of randomness.
+
+### Greedy, Greedier, Greediest
+The first attempt of creating an Omweso agent is to implement the logic based on greedy heuristics. Given that the agent plays a particular move, the algorithm returns the best decision according to greedy evaluation functions. The initial motivation behind this choice of method is because of speed and complexity. Supposing that the greedy algorithm does indeed return an optimal solution, it would be much faster and computationally more efficient than other extensive \textit{heavy-weight} algorithms. 
 
 ## Installation
 
