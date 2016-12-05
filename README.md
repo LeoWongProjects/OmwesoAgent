@@ -67,23 +67,4 @@ Discussed in the results section, the greedy approach does not seem to be the be
 #### Chaotic Behavior, Unexpected!
 Having the impression that many classmates are also designing agents based on Minimax algorithms, the battles could be close and the outcome would mainly be defined by the depth of the search engine and the initial placement of the seeds. What if a touch of randomness is included? The reason behind this approach is based on the effect of suprise, when the opposing player does no expect an non-optimal move to be played. Hence, by including some chaos in the functionality and logic of the player, it might throw the opponents off. Doing so, slightly worse outcomes at early levels are not completely omitted.
 
-## Installation
 
-Provide code examples and explanations of how to get the project.
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
-0Looking
